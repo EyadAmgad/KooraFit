@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>الحجز | KooraFit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="booking.html">
+<!-- Shared header is injected by js/main.js -->
+<header id="site-header"></header>
+<main>
+<section class="wrap sec"><h1 class="h">الحجز والجدول</h1>
+<div class="grid2">
+ <div class="card"><h3>جدول الحصص الأسبوعي</h3><ul class="sched" id="sched"></ul></div>
+ <div class="card"><h3>احجز موعدك</h3>
+  <form class="form" id="bookForm">
+   <label>التاريخ<input type="date" id="bDate" required></label>
+   <label>المنطقة<select id="bField"><option>المنطقة 1</option><option>المنطقة 2</option><option>المنطقة 3</option></select></label>
+   <fieldset><legend>الموعد</legend><div class="slots" id="slots"></div></fieldset>
+   <p class="note" id="summary">اختر التاريخ والموعد لعرض ملخص الحجز.</p>
+   <button class="btn">تأكيد الحجز</button></form></div>
+</div></section></main>
+<footer id="site-footer"></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="js/main.js"></script>
+</body></html>

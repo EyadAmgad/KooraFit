@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>تسجيل الدخول | KooraFit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="login.html">
+<!-- Shared header is injected by js/main.js -->
+<header id="site-header"></header>
+<main>
+<section class="wrap sec narrow"><div class="card">
+ <div class="tabs" role="tablist" aria-label="نوع الحساب">
+  <button class="tab on" id="login-tab" type="button" role="tab" aria-selected="true" aria-controls="login" data-tab="login">تسجيل الدخول</button>
+  <button class="tab" id="signup-tab" type="button" role="tab" aria-selected="false" aria-controls="signup" data-tab="signup">إنشاء حساب جديد</button>
+ </div>
+ <form class="form" id="login" data-msg="تم تسجيل الدخول بنجاح (نموذج تجريبي)">
+  <label for="login-email">البريد الإلكتروني<input id="login-email" name="email" type="email" required autocomplete="email"></label>
+  <label for="login-password">كلمة المرور<input id="login-password" name="password" type="password" required minlength="6" autocomplete="current-password"></label>
+  <button class="btn">دخول</button></form>
+ <form class="form" id="signup" hidden data-msg="تم إنشاء حسابك بنجاح (نموذج تجريبي)">
+  <label for="signup-name">الاسم الكامل<input id="signup-name" name="name" required autocomplete="name"></label>
+  <label for="signup-email">البريد الإلكتروني<input id="signup-email" name="email" type="email" required autocomplete="email"></label>
+  <label for="signup-phone">رقم الهاتف<input id="signup-phone" name="phone" type="tel" required pattern="[0-9+ ]{8,15}" placeholder="01xxxxxxxxx" autocomplete="tel"></label>
+  <label for="signup-password">كلمة المرور<input id="signup-password" name="password" type="password" required minlength="6" autocomplete="new-password"></label>
+  <label for="signup-password-confirmation">تأكيد كلمة المرور<input id="signup-password-confirmation" name="password_confirmation" type="password" required minlength="6" autocomplete="new-password"></label>
+  <button class="btn">إنشاء الحساب</button></form>
+</div></section></main>
+<footer id="site-footer"></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="js/main.js"></script>
+</body></html>
